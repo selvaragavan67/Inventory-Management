@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Add Location</h3>
+<form method="POST" action="/add_location" class="mb-3">
+  <input name="name" class="form-control mb-2" placeholder="Location Name" required>
+  <button class="btn btn-primary">Add</button>
+</form>
+
+<h4>All Locations</h4>
+<table class="table table-bordered">
+  <tr><th>ID</th><th>Name</th></tr>
+  {% for l in locations %}
+  <tr><td>{{l.id}}</td><td>{{l.name}}</td></tr>
+  {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,54 @@
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.btn {
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+h3, h4, h2 {
+  text-align: center;
+  color: #ffd700;
+}
+
+.table {
+  color: white;
+}
+
+.table thead {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+input, select {
+  border-radius: 10px !important;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}

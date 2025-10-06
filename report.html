@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Stock Balance Report</h3>
+<table class="table table-bordered">
+  <tr><th>Product</th><th>Location</th><th>Quantity</th></tr>
+  {% for row in data %}
+  <tr>
+    <td>{{row.product}}</td>
+    <td>{{row.location}}</td>
+    <td>{{row.balance}}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
